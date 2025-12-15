@@ -6,11 +6,12 @@ const isLeap = (y) => {
     if (y % 4 === 0) {
         if (y % 100 === 0) {
             if (y % 400 !== 0) {
-                return false
+                return false;
             }
         }
         return true;
     }
+    return false;
 }
 
 console.log(isLeap(y));
